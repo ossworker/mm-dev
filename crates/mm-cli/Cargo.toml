@@ -1,0 +1,27 @@
+[package]
+authors.workspace = true
+description = "cli"
+edition.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+license.workspace = true
+name = "mm-cli"
+version.workspace = true
+
+[[bin]]
+name = "mm"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+clap.workspace = true
+clap_complete.workspace = true
+crossterm = {workspace = true, optional = true}
+inquire = {workspace = true, optional = true}
+log.workspace = true
+semver.workspace = true
+
+[features]
+crossterm = ["dep:crossterm", "dep:inquire"]
+default = ["crossterm"]
