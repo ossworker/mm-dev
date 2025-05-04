@@ -1,6 +1,7 @@
 [workspace]
 members = [
   "crates/mm-cli",
+  "crates/typst-tpl",
 ]
 
 resolver = "3"
@@ -14,7 +15,7 @@ homepage = "https://github.com/workoss"
 keywords = ["mm", "tools"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/Workoss/mm-dev"
+repository = "https://github.com/ossworker/mm-dev"
 version = "0.1.0"
 
 [workspace.dependencies]
@@ -30,11 +31,12 @@ futures = {version = "0.3", features = ["thread-pool"]}
 git2 = {version = "0.20"}
 inquire = {version = "0.7", features = ["date", "editor", "tempfile"]}
 log = "0.4"
-magika = {version = "0.1", features = ["serde"]}
+magika = {version = "0.2", features = ["serde"]}
+rxing = {version = "0.7", features = ["svg_read", "svg_write", "wasm_support"]}
 semver = "1"
 serde = {version = "1.0", features = ["derive"]}
 serde_json = "1.0"
-thiserror = {version = "2.0", features = ["derive"]}
+thiserror = {version = "2.0"}
 tokio = {version = "1.44", features = ["full"]}
 tracing = "0.1"
 tracing-subscriber = {version = "0.3", features = ["env-filter"]}

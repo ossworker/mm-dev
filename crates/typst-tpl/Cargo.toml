@@ -1,0 +1,29 @@
+[package]
+authors.workspace = true
+categories.workspace = true
+description.workspace = true
+edition.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+license.workspace = true
+name = "typst-tpl"
+readme.workspace = true
+repository.workspace = true
+version.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+log.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+typst = "0.13"
+typst-kit = {version = "0.13", features = ["embed-fonts"]}
+typst-library = "0.13"
+typst-pdf = "0.13"
+ureq.workspace = true
+
+[lints]
+workspace = true

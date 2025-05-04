@@ -20,6 +20,7 @@ clap_complete.workspace = true
 crossterm = {workspace = true, optional = true}
 inquire = {workspace = true, optional = true}
 log.workspace = true
+rxing.workspace = true
 semver.workspace = true
 
 [features]

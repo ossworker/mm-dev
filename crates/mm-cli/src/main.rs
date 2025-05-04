@@ -4,6 +4,7 @@ use args::CliArgs;
 use clap::Parser as _;
 mod args;
 mod generate;
+mod progress;
 fn main() -> anyhow::Result<()> {
     set_panic_handler();
 
